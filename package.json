@@ -1,0 +1,35 @@
+{
+  "name": "icecoffee",
+  "version": "1.0.0",
+  "description": "A Revolt bot based around knowledge from my Coffee Discord bot.",
+  "main": "dist/src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node .",
+    "build": "rimraf dist && tsc",
+    "dev": "rimraf dist && tsc-watch --onSuccess \"npm run start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beefers/icecoffee.git"
+  },
+  "keywords": [
+    "revolt"
+  ],
+  "author": "Beef",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/Beefers/icecoffee/issues"
+  },
+  "homepage": "https://github.com/Beefers/icecoffeea#readme",
+  "devDependencies": {
+    "@types/ws": "^8.5.3",
+    "rimraf": "^3.0.2",
+    "tsc-watch": "^5.0.2",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "revolt-api": "^0.5.3-rc.8",
+    "revolt.js": "^6.0.0-rc.4"
+  }
+}
